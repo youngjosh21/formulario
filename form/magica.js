@@ -11,12 +11,12 @@ function adicionarCliente() {
     let tabela = document.getElementById('listaClientes');
     let novaLinha = tabela.insertRow();
     
-    // Adicionando as células para nome, telefone e email
+    // nome, telefone e email
     novaLinha.insertCell(0).innerText = nome;
     novaLinha.insertCell(1).innerText = telefone;
     novaLinha.insertCell(2).innerText = email;
     
-    // Adicionando o botão de excluir
+    //  botão de excluir
     let acaoCell = novaLinha.insertCell(3);
     let botaoExcluir = document.createElement('button');
     botaoExcluir.innerText = 'Excluir';
